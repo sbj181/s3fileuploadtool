@@ -4,6 +4,8 @@ const util = require('util');
 const fs = require('fs');
 const path = require('path');
 
+require('dotenv').config();
+
 // Configure AWS S3
 aws.config.update({
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
