@@ -1,16 +1,13 @@
-# Ignore node_modules in both client and api folders
-client/node_modules/
-api/node_modules/
+# Ignore node_modules
+node_modules/
 
-# Ignore the React build directory
+# Ignore React build folder locally
+# But allow it to be built on the server by Vercel
 client/build/
-
-# Ignore any local uploads folder
-uploads/
 
 # Ignore environment variable files
 .env
+.env.local
 
-# Ignore system files (Mac, etc.)
+# Ignore Mac system files
 .DS_Store
-.vercel

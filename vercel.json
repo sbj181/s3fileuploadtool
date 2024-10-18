@@ -1,7 +1,7 @@
 {
     "builds": [
       {
-        "src": "api/**/*.js",
+        "src": "api/upload.js",
         "use": "@vercel/node"
       },
       {
@@ -19,7 +19,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "/client/$1"
+        "dest": "/client/build/$1"
       }
     ]
   }
