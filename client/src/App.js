@@ -31,7 +31,7 @@ function App() {
       setIsSuccess(false);
       setS3Url(''); // Reset the S3 URL
 
-      const response = await axios.post('http://localhost:5001/upload', formData, {
+      const response = await axios.post('/api/upload', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
         onUploadProgress: (progressEvent) => {
           const percentCompleted = Math.round(
@@ -40,6 +40,7 @@ function App() {
           setProgress(percentCompleted);
         },
       });
+      
 
       // On success, save the S3 URL and display it
       setS3Url(response.data.s3Url);
