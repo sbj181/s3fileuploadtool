@@ -13,3 +13,4 @@ uploads/
 
 # Ignore system files (Mac, etc.)
 .DS_Store
+.vercel
