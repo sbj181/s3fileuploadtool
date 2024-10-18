@@ -1,0 +1,14 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore the React build directory
+client/build/
+
+# Ignore any local uploads folder
+uploads/
+
+# Ignore environment variable files
+.env
+
+# Ignore system files (Mac, etc.)
+.DS_Store
