@@ -6,7 +6,7 @@ const path = require('path');
 
 // Configure AWS S3
 aws.config.update({
-  accessKeyId: process.env.AWS_ACCESS_KEY_ID,  // Add these as environment variables
+  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
   region: 'us-east-1',
 });
